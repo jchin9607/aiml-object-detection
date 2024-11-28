@@ -23,6 +23,7 @@ function setup() {
 }
 
 function draw() {
+  if (!detector.modelReady) return;
   image(video, 0, 0);
 
   for (let i = 0; i < detections.length; i++) {
